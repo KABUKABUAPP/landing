@@ -1,15 +1,18 @@
 import AppStoreButton from "@/components/common/AppStoreButton";
 import Image from "next/image";
 import React, { FC, useState } from "react";
+import Button from "@/components/ui/Button/Button";
 
 interface Props {
   image: string;
   title: string;
   body: string;
   bgColor: string;
+  downloadLink: string;
+  buttonTitle: string;
 }
 
-const DownloadCard: FC<Props> = ({ image, title, body, bgColor }) => {
+const DownloadCard: FC<Props> = ({ image, title, body, bgColor, downloadLink, buttonTitle }) => {
   const [isHovering, setIsHovering] = useState<boolean>(false);
 
   return (
@@ -42,6 +45,12 @@ const DownloadCard: FC<Props> = ({ image, title, body, bgColor }) => {
           <div className="flex items-center justify-center gap-4 max-sm:gap-2">
             {/* <AppStoreButton store="android" variant="dark" />
             <AppStoreButton store="apple" variant="dark" /> */}
+            <a href={downloadLink}>
+              <Button
+              title={buttonTitle}
+              className="!text-[16px] mt-6"
+              size="large" />
+            </a>
           </div>
         </div>
       </div>

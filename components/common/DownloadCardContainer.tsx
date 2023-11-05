@@ -13,6 +13,8 @@ const DownloadCardContainer: FC = () => {
             title="Ride With Us"
             body="Get Kabukabu Rider App and enjoy the riding experience"
             image="https://res.cloudinary.com/dt0wfaxft/image/upload/v1684178108/ridewithus_hb5dvn.png"
+            downloadLink=""
+            buttonTitle="Download Rider App"
           />
         </div>
         <div className="flex-1 flex justify-center">
@@ -21,6 +23,8 @@ const DownloadCardContainer: FC = () => {
             title="Drive With Us"
             body="Drive and earn seamlessly using the Kabukabu Driver App"
             image="https://res.cloudinary.com/dt0wfaxft/image/upload/v1684178152/drivewithus_mw5jvj.png"
+            downloadLink="https://kabukabudriver.page.link/app"
+            buttonTitle="Download Driver App"
           />
         </div>
       </div>
