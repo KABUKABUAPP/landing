@@ -31,7 +31,7 @@ const Jumbotron: FC = () => {
               <div className="flex justify-center gap-6 mt-6 max-sm:gap-2">
                 {/* <AppStoreButton store="android" />
                 <AppStoreButton store="apple" /> */}
-                <a href={"#"}>
+                <a href={"https://kabukaburider.page.link/app"}>
                   <Button
                   title={'Download Rider App'}
                   className="!text-[16px] mt-6"
