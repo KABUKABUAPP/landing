@@ -49,6 +49,7 @@ const RiderDriverContainer: FC = () => {
           <div>
             <RiderDriverBulletContainer
               data={isRider ? bulletPoints.rider : bulletPoints.drivers}
+              isRider={isRider}
             />
           </div>
         </div>

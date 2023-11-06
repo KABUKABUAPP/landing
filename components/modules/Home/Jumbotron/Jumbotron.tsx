@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import styles from "./styles.module.css";
 import Logo from "@/components/common/Logo";
+import Button from "@/components/ui/Button/Button";
 
 const Jumbotron: FC = () => {
   return (
@@ -30,6 +31,18 @@ const Jumbotron: FC = () => {
               <div className="flex justify-center gap-6 mt-6 max-sm:gap-2">
                 {/* <AppStoreButton store="android" />
                 <AppStoreButton store="apple" /> */}
+                <a href={"#"}>
+                  <Button
+                  title={'Download Rider App'}
+                  className="!text-[16px] mt-6"
+                  size="large" />
+                </a>
+                <a href={"https://kabukabudriver.page.link/app"}>
+                  <Button
+                  title={'Download Driver App'}
+                  className="!text-[16px] mt-6"
+                  size="large" />
+                </a>
               </div>
             </motion.div>
 
