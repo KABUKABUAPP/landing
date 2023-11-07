@@ -7,6 +7,7 @@ import ModalProvider from "@/contexts/ModalContext";
 import { Provider } from "react-redux";
 import { reduxStore } from "@/config/reduxStore";
 import Script from "next/script";
+import Navbar from "@/components/common/Navbar";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -26,6 +27,7 @@ export default function App({ Component, pageProps }: AppProps) {
                     });
                 `}
       </Script>
+      <Navbar />
       <ModalProvider>
         <Provider store={reduxStore}>
           <ToastContainer />

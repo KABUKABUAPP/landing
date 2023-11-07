@@ -22,7 +22,7 @@ const RiderDriverBulletContainer: FC<Props> = ({ data, isRider }) => {
       })}
       {
         isRider ?
-        <a href={"#"}>
+        <a href={"https://kabukaburider.page.link/app"}>
           <Button
           title={'Download Rider App'}
           className="!text-[16px] mt-6"
