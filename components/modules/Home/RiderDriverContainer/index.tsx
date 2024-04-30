@@ -32,11 +32,7 @@ const RiderDriverContainer: FC = () => {
           <Image
             fill={true}
             alt={"Kabukabu Driver"}
-            src={
-              isRider
-                ? "https://res.cloudinary.com/dt0wfaxft/image/upload/v1684176849/rider_z74kf3.png"
-                : "https://res.cloudinary.com/dt0wfaxft/image/upload/v1684176745/driver_axq1iz.png"
-            }
+            src={isRider ? "https://res.cloudinary.com/kabukabu/image/upload/v1714335048/landing/Image_Frame_yiign3.png" : "https://res.cloudinary.com/kabukabu/image/upload/v1714335040/landing/Rectangle_11_oesorp.png"}
             style={{ objectFit: "cover" }}
           />
         </div>

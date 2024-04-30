@@ -11,7 +11,7 @@ const Banner: FC = () => {
         fill={true}
         alt={"Kabukabu Driver"}
         src={
-          "https://res.cloudinary.com/dt0wfaxft/image/upload/v1688473352/Header_Image_dvcdye.png"
+          "https://res.cloudinary.com/kabukabu/image/upload/v1714335047/landing/Header_Image_ozfpyq.png"
         }
         style={{ objectFit: "cover" }}
         priority
