@@ -8,7 +8,7 @@ const Logo: FC = () => {
   return (
     <div className="relative h-8 w-36 cursor-pointer" onClick={()=>router.push('/')}>
       <Image
-        src={"https://res.cloudinary.com/dt0wfaxft/image/upload/v1685130491/logo_sulnht.png"}
+        src={"https://res.cloudinary.com/kabukabu/image/upload/v1714335039/landing/Black_Variation_1_qjdlqj.png"}
         fill={true}
         alt="Kabukabu, ride hailing service"
         style={{ objectFit: "contain" }}
