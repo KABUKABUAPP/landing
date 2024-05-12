@@ -28,15 +28,15 @@ const Footer: FC<Props> = (props) => {
               </Link>
             </div>
             <div className="flex items-center gap-6">
-              <Link href={""}>
+              <Link href={"https://web.facebook.com/profile.php?id=100091741160703"}>
                 <FacebookIcon />
               </Link>
 
-              <Link href={""}>
+              <Link href={"https://twitter.com/getkabukabu"}>
                 <TwitterIcon />
               </Link>
 
-              <Link href={""}>
+              <Link href={"http://youtube.com/@KabukabuApp"}>
                 <YoutubeIcon />
               </Link>
             </div>
