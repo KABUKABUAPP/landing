@@ -14,31 +14,35 @@ import MissionVisionCardContainer from "@/components/modules/AboutUs/MissionVisi
 import missionVision from "../json_data/mission-vision.json";
 import Intro from "@/components/modules/AboutUs/Intro";
 import Banner from "@/components/modules/AboutUs/Banner";
+import Navbar from "@/components/common/Navbar";
 
 const AboutUs: NextPage = () => {
   return (
-    <motion.div
-      initial={{ translateX: "-60%" }}
-      whileInView={{
-        translateX: 0,
-        transition: { duration: 0.4 },
-      }}
-      viewport={{ once: true }}
-    >
-      <AppHeader pageTitle="Kabukabu | About Kabukabu" />
-      <Banner />
-      <Container>
-        <Intro />
-        <MissionVisionCardContainer data={missionVision} />
-        <WhyKabukabu />
-        <CoreStrengthContainer
-          data={coreStrengthData}
-          title="Our Core Strength"
-        />
-        <DownloadCardContainer />
-      </Container>
-      <Footer />
-    </motion.div>
+    <>
+      <Navbar />
+      <motion.div
+        initial={{ translateX: "-60%" }}
+        whileInView={{
+          translateX: 0,
+          transition: { duration: 0.4 },
+        }}
+        viewport={{ once: true }}
+      >
+        <AppHeader pageTitle="Kabukabu | About Kabukabu" />
+        <Banner />
+        <Container>
+          <Intro />
+          <MissionVisionCardContainer data={missionVision} />
+          <WhyKabukabu />
+          <CoreStrengthContainer
+            data={coreStrengthData}
+            title="Our Core Strength"
+          />
+          <DownloadCardContainer />
+        </Container>
+        <Footer />
+      </motion.div>
+    </>
   );
 };
 

@@ -8,25 +8,29 @@ import Header from "@/components/modules/TermsOfService/Header";
 import Footer from "@/components/common/Footer";
 import DownloadCardContainer from "@/components/common/DownloadCardContainer";
 import TermsOfServiceBody from "@/components/modules/TermsOfService/TermsOfServiceBody";
+import Navbar from "@/components/common/Navbar";
 
 const TermsOfService: NextPage = () => {
   return (
-    <motion.div
-      initial={{ translateX: "-60%" }}
-      whileInView={{
-        translateX: 0,
-        transition: { duration: 0.4 },
-      }}
-      viewport={{ once: true }}
-    >
-      <AppHeader pageTitle="Kabukabu | Terms of Service" />
-      <Container>
-        <Header />
-        <TermsOfServiceBody />
-        <DownloadCardContainer />
-      </Container>
-      <Footer />
-    </motion.div>
+    <>
+      <Navbar />
+      <motion.div
+        initial={{ translateX: "-60%" }}
+        whileInView={{
+          translateX: 0,
+          transition: { duration: 0.4 },
+        }}
+        viewport={{ once: true }}
+      >
+        <AppHeader pageTitle="Kabukabu | Terms of Service" />
+        <Container>
+          <Header />
+          <TermsOfServiceBody />
+          <DownloadCardContainer />
+        </Container>
+        <Footer />
+      </motion.div>
+    </>
   );
 };
 

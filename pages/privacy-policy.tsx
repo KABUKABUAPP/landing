@@ -8,25 +8,29 @@ import Footer from "@/components/common/Footer";
 import PolicyBody from "@/components/modules/PrivacyPolicy/PolicyBody";
 import AppHeader from "@/components/common/AppHeader";
 import { motion } from "framer-motion";
+import Navbar from "@/components/common/Navbar";
 
 const PrivacyPolicy: NextPage = () => {
   return (
-    <motion.div
-      initial={{ translateX: '-60%', }}
-      whileInView={{
-        translateX: 0,
-        transition: { duration: 0.4 },
-      }}
-      viewport={{ once: true }}
-    >
-      <AppHeader pageTitle="Kabukabu | Privacy Policy" />
-      <Container>
-        <Header />
-        <PolicyBody />
-        <DownloadCardContainer />
-      </Container>
-      <Footer />
-    </motion.div>
+    <>
+      <Navbar />
+      <motion.div
+        initial={{ translateX: '-60%', }}
+        whileInView={{
+          translateX: 0,
+          transition: { duration: 0.4 },
+        }}
+        viewport={{ once: true }}
+      >
+        <AppHeader pageTitle="Kabukabu | Privacy Policy" />
+        <Container>
+          <Header />
+          <PolicyBody />
+          <DownloadCardContainer />
+        </Container>
+        <Footer />
+      </motion.div>
+    </>
   );
 };
 

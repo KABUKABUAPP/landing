@@ -1,0 +1,29 @@
+
+.jumboContainer {
+    background: #ffffff url(/home/jumbo-bg.png)  no-repeat center center/cover;
+    /* animation: mymove 1s forwards linear; */
+}
+
+.jumboGradient {
+    background: linear-gradient(180deg, #E5E5E5 12.16%, #efeeee, rgba(229, 229, 229, 0) 90.7%);
+}
+
+.carBox {
+    transform: translateY(80px) !important;
+    animation: carMove 1s forwards linear;
+}
+
+/* 
+@keyframes mymove {
+    0% {
+        background-size: 150% 150%;
+        opacity: 0;
+    }
+    99% {
+        background-size: 100% 100%;
+        opacity: 1;
+    }
+    100% {
+        background-size: cover;
+    }
+  } */
