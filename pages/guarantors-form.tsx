@@ -6,6 +6,7 @@ import StepTwo from "@/components/modules/GuarantorsForm/StepTwo";
 import StepThree from "@/components/modules/GuarantorsForm/StepThree";
 import UserDidNotConfirm from "@/components/modules/GuarantorsForm/UserDidNotConfirm";
 import AppHeader from "@/components/common/AppHeader";
+import Navbar from "@/components/common/Navbar";
 
 const GuarantorsForm: NextPage = () => {
   const [currentStep, setCurrentStep] = useState<number>(1);
@@ -14,6 +15,7 @@ const GuarantorsForm: NextPage = () => {
   return (
     <>
       <AppHeader pageTitle="Kabukabu | Guarantors Form" />
+      <Navbar />
       <div className="!bg-[#F8F8F8]">
         {!userDidNotConfirm && currentStep === 1 && (
           <StepOne

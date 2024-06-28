@@ -27,7 +27,6 @@ export default function App({ Component, pageProps }: AppProps) {
                     });
                 `}
       </Script>
-      <Navbar />
       <ModalProvider>
         <Provider store={reduxStore}>
           <ToastContainer />
