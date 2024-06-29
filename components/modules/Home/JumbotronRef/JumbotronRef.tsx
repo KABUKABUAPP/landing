@@ -17,7 +17,7 @@ const JumbotronRef: FC = () => {
   const { setModalContent } = useModalContext();
   const router = useRouter();
   const [email, setEmail] = useState('');
-  const referralCode = router.query.id;
+  const referralCode = router.query.code;
   const type = router.query.type;
 
   const [submitForm, { isLoading, isSuccess, isError, error }] =
