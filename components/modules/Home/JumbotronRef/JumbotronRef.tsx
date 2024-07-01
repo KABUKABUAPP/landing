@@ -63,15 +63,16 @@ const JumbotronRef: FC = () => {
               <p className="text-center font-bold text-4xl">
                 Unlock Exclusive Deals
               </p>
-              <p className="text-center font-bold text-md sm:flex-row w-[90%] sm:w-[60%] lg:w-[40%] mx-auto">
+              <p className="text-center font-semi-bold text-md sm:flex-row w-[90%] sm:w-[60%] lg:w-[40%] mx-auto">
                 Welcome to KabuKabu! Enter your email to claim <br /> exclusive promo deals and get started today.
               </p>
               <div className="flex flex-col sm:flex-row w-[90%] sm:w-[60%] lg:w-[40%] mx-auto justify-center gap-6 mt-6 max-sm:gap-2">
-                <div className="w-full sm:w-[70%]">
-                  <TextField
-                    label="Enter Email"
+                <div className="w-full sm:w-[70%] flex-col hustify-center items-center">
+                  <label>Enter Email</label>
+                  <input
+                    type="text"
                     placeholder="Enter here"
-                    className="bg-[#FFF]"
+                    className="bg-[#F1F1F1] border border-[#000] rounded-md w-full h-[6vh] px-2"
                     value={email}
                     onChange={(e) => {
                         setEmail(e?.target?.value)

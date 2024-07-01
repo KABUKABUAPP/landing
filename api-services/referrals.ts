@@ -5,7 +5,7 @@ import { secondsToMilliSeconds } from "@/utils";
 export const referralsApi = createApi({
   reducerPath: "referralsApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: RIDES_BASE_URL,
+    baseUrl: BASE_URL,
     timeout: secondsToMilliSeconds(30),
   }),
   endpoints: (build) => ({
