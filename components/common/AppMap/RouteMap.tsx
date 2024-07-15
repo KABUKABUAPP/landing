@@ -40,7 +40,7 @@ const RouteMap: FC<Props> = ({ start, end }) => {
 
   const containerStyle = {
     width: "100%",
-    height: "90%",
+    height: "100%",
   };
 
   return isLoaded ? (

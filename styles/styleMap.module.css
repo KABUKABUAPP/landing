@@ -1,0 +1,47 @@
+/* styles/index.module.css */
+
+.app {
+  position: relative;
+  height: 80vh;
+}
+
+.overlay::-webkit-scrollbar {
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+  width: 30%;
+  color: #000;
+  max-height: 50vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.overlaySecond {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  width: 25%;
+  text-align: center;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .overlaySecond {
+      display: none;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
+    width: 90%;
+    color: #000;
+    max-height: 50vh;
+    overflow-y: scroll;
+  }
+} 
