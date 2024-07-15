@@ -5,8 +5,10 @@ export const useViewTripQuery = async (id: string) => {
   try {
     const getTrip = await axios.get(`${BASE_URL}/admin/trip/view/${id}`)
     const response = getTrip?.data;
+    console.log({response})
     return {
-      carModel: `${response?.data?.car?.brand_name} ${response?.data?.car?.model}`,
+      carModel: `${response?.data?.car?.brand_name} ${response?.data?.car?.model} ${response?.data?.car?.year}`,
+      carColor: response?.data?.car?.color,
       destination: `${response?.data?.destination?.city}, ${response?.data?.destination?.state}, ${response?.data?.destination?.country}`,
       driverFullname: `${response?.data?.driver_details?.full_name}`,
       driverId: `${response?.data?.driver_details._id}`,
