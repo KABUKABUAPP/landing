@@ -4,7 +4,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import MapboxDirections from '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions';
 import '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions.css';
 
-mapboxgl.accessToken = `${process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}` || '';
+mapboxgl.accessToken = `pk.eyJ1Ijoia2FidWthYnVhcHAiLCJhIjoiY2x6OHNrcnV2MDRtaTJqc2EzMXIydzNkZSJ9.A1YJ22uraf2CuZyz-cmV_A` || '';
 
 interface RouteMapTwoProps {
   start: [number, number];
